@@ -6,7 +6,7 @@ import os
 
 PORT = int(os.environ.get('PORT',5000))
 logging.basicConfig(level=logging.INFO)
-API_TOKEN = '8494742069:AAH6iybcnf2Ev7eAyndc71nWuTNchiaQs-I'
+API_TOKEN = ' '
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
@@ -52,4 +52,5 @@ if __name__=='__main__' :
     print("bot is runing")
     executor.start_polling(dp)
 print("done")
+
 executor.start_polling(dp, skip_updates=True)
